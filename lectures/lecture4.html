@@ -1,0 +1,124 @@
+<html>
+<title>Lecture 2</title>
+<head>
+	<style type="text/css">
+		td{
+			border:solid;
+		}
+		p, label.pi{
+			color:blue;
+			background-color: yellow;
+			border-right-style:solid;
+			border-left-style:solid;
+			border-bottom-style:dashed;
+			border-color:black;
+			font-size: 100%;
+		}
+		label.ai{
+			color:red;
+			background-color: cyan;
+		}
+		#lbl1{
+			background-color: black;
+		}
+		#warning{
+			background-color: red;
+		}
+	</style>
+</head>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+		$('#btn').click(function(){
+
+			$('#pi').hide();
+			$("#ai"),show();
+
+		})
+	})
+</script>
+
+<body>
+<h1>Registration FORM</h1>
+
+<fieldset id="pi"><legend>Personal Information</legend>
+
+<label class="pi" id="lbl1">First Name:</label><input type="text" placeholder="Ashraf"><br>
+<label class="pi">Last Name:</label><input type="text" placeholder="Iqbal"><br>
+<label class="pi">Date of Birth:</label><input type="date"><br>
+<label class="pi">Cell #</label><input type="text" placeholder="+92-333-9533XYZ"><br>
+<label class="pi">Email</label><input type="text" placeholder="saeed.iqbal@ucp.edu.pk"><br>
+<label class="pi">CNIC#</label><input type="text" placeholder="12345-1234567-8"><br>
+<label class="pi">House#</label><input type="number"><br>
+<label class="pi">Street#</label><input type="number"><br>
+<label class="pi">Phase/Block:</label><input type="text"><br>
+<label class="pi">Area:</label>
+<select>
+<option value="Johar Town">Johar Town</option>
+<option value="Model Town">Model Town</option>
+<option value="Faisal Town">Faisal Town</option>
+<option value="Wapda Town">Wapda Town</option>
+</select>
+<br>
+<label class="pi">City:</label>
+<select>
+<option value="Lahore">Lahore</option>
+<option value="Multan">Multan</option>
+<option value="Faisal abad">Faisal abad</option>
+</select>
+<input type="button" value="Next" id="btn">
+</fieldset>
+
+
+<fieldset id="ai"><legend>Academic Information</legend>
+<table style="border: dashed">
+	<tr><td style="border: solid">
+	<label class="ai">Degree/Certificate:</label>
+	</td><td>
+	<select>
+		<option value="Matric">Matric</option>
+		<option value="Intermediate">Inter</option>
+	</select>
+	</td></tr>
+	<tr>
+		<td>Obtained Marks</td>
+		<td>
+		<input type="text" placeholder="Obtained Marks">
+		</td></tr>
+	<tr>
+		<td>Total Marks</td>
+		<td>
+			<input type="text" placeholder="Total Marks">
+		</td>
+	</tr>
+	<tr>
+		<td><input type="button" value="Prev" ></td>
+		<td><input type="button" value="Next" ></td>
+	</tr>
+</table>
+</fieldset>
+
+<p>
+Welcome
+to the Teacher Services of UCP online.
+Please use the menu given at the top.
+Open LMS
+Welcome
+to the Teacher Services of UCP online.
+Please use the menu given at the top.
+Open LMS
+Welcome
+to the Teacher Services of UCP online.
+Please use the menu given at the top.
+Open LMS
+</p>
+<p id="warning">
+WARNING:WARNING:WARNING:WARNING:WARNING:Welcome
+to the Teacher Services of UCP online.
+Please use the menu given at the top.
+Open LMS
+
+</p>
+<input type="button" value="Prev">
+</body>
+</html

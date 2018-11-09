@@ -1,0 +1,148 @@
+<html>
+<title>Lecture 2</title>
+<head>
+	<style type="text/css">
+		td{
+			border:solid;
+		}
+		p, label.pi{
+			color:blue;
+			background-color: yellow;
+			border-right-style:solid;
+			border-left-style:solid;
+			border-bottom-style:dashed;
+			border-color:black;
+			font-size: 100%;
+		}
+		label.ai{
+			color:red;
+			background-color: cyan;
+		}
+		#lbl1{
+			background-color: black;
+		}
+		#warning{
+			background-color: red;
+		}
+		#wii{
+			background-color: cyan;
+
+		}
+	</style>
+  <script src= "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" ></script>
+	<script type="text/javascript">
+	  $(document).ready(function(){
+			$("#next1").click(function(){
+				$("#aii").show();
+				$("#pii").hide();
+				$("#wii").hide();
+			});
+		});
+	$(document).ready(function(){
+		$("#prev1").click(function(){
+			$("#aii").hide();
+			$("#pii").show();
+			$("#wii").hide();
+
+		});
+	});
+	 $(document).ready(function(){
+		$("#next2").click(function(){
+			$("#aii").hide();
+			$("#pii").hide();
+			$("#wii").show();
+		});
+	});
+	 $(document).ready(function(){
+		$("#prev2").click(function(){
+			$("#aii").show();
+			$("#pii").hide();
+			$("#wii").hide();
+		});
+	});
+  </script>
+
+</head>
+<body>
+<h1>Registration FORM</h1>
+
+<fieldset><legend>Personal Information</legend>
+<table id="pii" ><tr><td>
+<label class="pi" id="lbl1">First Name:</label></td><td><input type="text" placeholder="Ashraf"></td></tr>
+<tr><td><label class="pi">Last Name:</label></td><td><input type="text" placeholder="Iqbal"></td></tr>
+<tr><td><label class="pi">Date of Birth:</label></td><td><input type="date"></td></tr>
+<tr><td><label class="pi">Cell #</label></td><td><input type="text" placeholder="+92-333-9533XYZ"></td></tr>
+<tr><td><label class="pi">Email</label></td><td><input type="text" placeholder="saeed.iqbal@ucp.edu.pk"></td></tr>
+<tr><td><label class="pi">CNIC#</label></td><td><input type="text" placeholder="12345-1234567-8"></td></tr>
+<tr><td><label class="pi">House#</label></td><td><input type="number"></td></tr>
+<tr><td><label class="pi">Street#</label></td><td><input type="number"></td></tr>
+<tr><td><label class="pi">Phase/Block:</label></td><td><input type="text"></td></tr>
+<tr><td>
+<label class="pi">Area:</label></td><td>
+<select>
+<option value="Johar Town">Johar Town</option>
+<option value="Model Town">Model Town</option>
+<option value="Faisal Town">Faisal Town</option>
+<option value="Wapda Town">Wapda Town</option>
+</select></td></tr>
+<tr><td>
+<label class="pi">City:</label></td><td>
+<select>
+<option value="Lahore">Lahore</option>
+<option value="Multan">Multan</option>
+<option value="Faisal abad">Faisal abad</option>
+</select></td></tr>
+<tr><td><input type="button" value="NEXT" id="next1"></td><td></td></tr>
+</table>
+</fieldset>
+
+
+<fieldset><legend>Academic Information</legend>
+<table style="border: dashed" id="aii" hidden >
+	<tr><td style="border: solid">
+	<label class="ai">Degree/Certificate:</label>
+	</td><td>
+	<select>
+		<option value="Matric">Matric</option>
+		<option value="Intermediate">Inter</option>
+	</select>
+	</td></tr>
+	<tr>
+		<td>Obtained Marks</td>
+		<td>
+		<input type="text" placeholder="Obtained Marks">
+		</td></tr>
+	<tr>
+		<td>Total Marks</td>
+		<td>
+			<input type="text" placeholder="Total Marks">
+		</td>
+	</tr>
+	<tr><td><input type="button" value="Prev" id="prev1"></td>
+		<td><input type="button" value="NEXT" id="next2"></td>
+	</tr>
+</table>
+</fieldset>
+
+<table id="wii" hidden  >
+	<fieldset>
+		<legend>Work Experience</legend>
+
+	<tr>
+		<td><label>Company:<input type="text"><label></td>
+	</tr>
+  <tr>
+	  <td>
+			<label>years worked:<input type="text"></label>
+	  </td>
+</tr>
+	<tr><td>
+		<input type="button" value="Prev" id="prev2"></td>
+		<td><input type="button" value="submit"></td>
+	</tr>
+</fieldset>
+
+</table>
+
+</body>
+</html
